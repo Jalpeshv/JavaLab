@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class VendingMachine {
     enum Coin{
         ONE(1),
@@ -16,8 +17,8 @@ public class VendingMachine {
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int sum =0,change = 0;
-        While(sum<15){
+        int sum =0;int change = 0;
+        while(sum<15){
             System.out.println("Enter Coin (ONE, TWO, FIVE, TEN): ");
         String str = scanner.next().toUpperCase();
         sum += Coin.valueOf(str).getValue();
@@ -27,6 +28,6 @@ public class VendingMachine {
             System.out.println("Change: " + change);
         }
         System.out.println("Sum: " + sum);
+    };
     }
-   
 }

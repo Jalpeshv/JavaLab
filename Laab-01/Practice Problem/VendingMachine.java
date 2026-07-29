@@ -1,3 +1,10 @@
+//git clone URL
+//git add .
+//git commit -m "Initial commit"
+//git push
+
+
+
 import java.util.Scanner;
 public class VendingMachine {
     enum Coin{
